@@ -3,9 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Emolett by mayuco</title>
-    
+    <meta property="og:title" content="Emolett">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://mayuco.github.com/emolett">
+    <meta property="og:image" content="http://mayuco.github.com/emolett/images/emolett.png">
+    <meta property="og:site_name" content="Emolett">
+    <meta property="fb:admins" content="100001098987252">
+    <title>Emolett</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/mayuco.css">
+    <link rel="stylesheet" href="stylesheets/emolett.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -13,47 +20,112 @@
     <![endif]-->
   </head>
   <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
     <div class="wrapper">
       <header>
-        <h1>Emolett</h1>
-        <p></p>
+        <h1><img src="images/emolett.png" alt="Emolett"></h1>
         <p class="view"><a href="https://github.com/mayuco/emolett">View the Project on GitHub <small>mayuco/emolett</small></a></p>
-        <ul>
+        <div class="fb-like" data-href="http://mayuco.github.com/emolett/" data-send="false" data-layout="button_count" data-width="300" data-show-faces="false" data-font="arial"></div>
+         <ul>
           <li><a href="https://github.com/mayuco/emolett/zipball/master">Download <strong>ZIP File</strong></a></li>
           <li><a href="https://github.com/mayuco/emolett/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/mayuco/emolett">Fork On <strong>GitHub</strong></a></li>
         </ul>
       </header>
       <section>
-        <h3>Welcome to GitHub Pages.</h3>
+        <h2>About Emolett</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <h3>Emolettは、(　) と 漢字1文字での感情表現を絵文字で表すためのフォントです</h3>
+        <p>Web Fontsとして利用されることを目的としてつくりました。</p>
+        <p>例えば (笑) に class="emo" と指定するだけで、絵文字<span class="emo">(笑)</span>になります。</p>
+        <p>日本語では(　) の中に漢字1文字で感情を表現をする文化があるので、絵に意味を持たせるのに適していると思いました。</p>
+        <p>Web Fonts が表示できないブラウザでも、単に(笑)と表示されるので、気持ちを伝えることができます。</p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <h3>フォント一覧</h3>
+        <div>
+        <dl>
+          <dt>(笑)</dt>
+          <dd><span class="emo">(笑)</span></dd>
+          <dt>(爆)</dt>
+          <dd><span class="emo">(爆)</span></dd>
+          <dt>(嬉)</dt>
+          <dd><span class="emo">(嬉)</span></dd>
+          <dt>(喜)/(楽)</dt>
+          <dd><span class="emo">(喜)</span></dd>
+          <dt>(驚)</dt>
+          <dd><span class="emo">(驚)</span></dd>
+          <dt>(泣)/(涙)</dt>
+          <dd><span class="emo">(泣)</span></dd>
+          <dt>(悲)</dt>
+          <dd><span class="emo">(悲)</span></dd>
+          <dt>(怒)</dt>
+          <dd><span class="emo">(怒)</span></dd>
+          <dt>(厳)/(辛)</dt>
+          <dd><span class="emo">(厳)</span></dd>
+          <dt>(苦)</dt>
+          <dd><span class="emo">(苦)</span></dd>
+          <dt>(閃)</dt>
+          <dd><span class="emo">(閃)</span></dd>
+          <dt>(汗)</dt>
+          <dd><span class="emo">(汗)</span></dd>
+          <dt>(忙)/(急)</dt>
+          <dd><span class="emo">(忙)</span></dd>
+          <dt>(輝)</dt>
+          <dd><span class="emo">(輝)</span></dd>
+        </dl>
+        </div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <h2>How To Use</h2>
 
-<h3>Designer Templates</h3>
+        <h3>実際に使ってみる</h3>
+        <p>実際に使う場合は、フォントファイルを自分のサーバーへアップロードしましょう。</p>
+        <ol>
+          <li><a href="https://github.com/mayuco/emolett/zipball/master">ダウンロード</a>するか、cloneします。
+          <pre><code>$ git clone git://github.com:mayuco/emolett.git</code></pre>
+          </li>
+          <li>emolettフォルダの中にあるfontsフォルダを自分のWebサイトに置きます。</li>
+          <li>例えば以下のようにCSSを書き、フォントのパスを指定します。
+          <pre><code>@font-face {
+  font-family: Emolett;
+  src: url("/fonts/emolett.woff") format("woff"),
+  url("/fonts/emolett.otf") format("opentype");
+}
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+.emolett,
+.emo {
+  font-family: Emolett;
+}</code></pre>
+          </li>
+          <li>
+          絵文字にしたい箇所で、以下のように class="emo" または class="emolett" を指定します。
+          <pre><code>おもしろいね &lt;span class="emo"&gt;(笑)&lt;/span&gt;</code></pre>
+          </li>
+        </ol>
 
-<h3>Rather Drive Stick?</h3>
+        <h2>Version</h2>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+       <p>1.0.0</p>
 
-<h3>Authors and Contributors</h3>
+        <h2>License</h2>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+        <p><a href="http://scripts.sil.org/OFL">SIL Open Font License (OFL)</a>を採用します。</p>
 
-<h3>Support or Contact</h3>
+        <h2>Request</h2>
+        <p>「このような文字があったらよい」などありましたら、<a href="https://github.com/mayuco/emolett/issues">Issues</a> か <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#99;&#111;&#99;&#111;&#111;&#111;&#111;&#111;&#111;&#111;&#110;&#46;&#99;&#111;&#109;">メール</a>でお知らせください。</p>
+        <p>(ライセンス上、フォントを改変して利用いただけますが、改変フォントのpull requestは歓迎していません。)</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact support@github.com and we’ll help you sort it out.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/mayuco">mayuco</a></p>
+        <p class="icon"><img alt="avatar" src="http://www.gravatar.com/avatar/00575484b5d4489619bfc52e9775ee3b?s=48"></p>
+        <p>&raquo;&nbsp;<a href="http://cocooooooon.com/" target="_blank">http://cocooooooon.com/</a>
         <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
     </div>

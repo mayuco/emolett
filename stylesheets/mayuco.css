@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+h1 {
+  font-size: 300%;
+  font-family: 'Special Elite', cursive;
+}
+
+
+h2 {
+  margin-top: 40px;
+  padding: 5px;
+  font-size: 150%;
+  border-bottom: 2px solid #E41B5B;
+  border-top: 7px solid #E41B5B;
+  color: #E41B5B;
+  font-family: 'Rokkitt', serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 100%;
+}
+
+p {
+  font-size: 90%;
+}
+
+dl {
+  margin: 20px;
+  padding: 10px;
+  border: 1px dotted #ccc;
+  width: 400px;
+}
+
+dt,
+dd {
+  color:#777;
+  font-weight: normal;
+}
+
+dt {
+  margin: 0;
+  display: inline-block;
+  font-size: 120%;
+  width: 100px;
+}
+
+dd {
+  margin: 0 10px 0 3px;
+  display: inline-block;
+  width: 80px;
+}
+
+dd:before {
+  margin: 0 10px 0 0;
+  font-size: 140%;
+  color: #E41B5B;
+  content: "»";
+}
+
+dd span {
+  font-size: 140%;
+}
+
+footer {
+  text-align: center;
+}
+
+.icon img {
+  padding: 4px;
+  border: 4px solid #ccc;
+}
