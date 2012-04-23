@@ -2,6 +2,10 @@
 @import url(http://fonts.googleapis.com/css?family=Rokkitt:400,700);
 @import url(http://fonts.googleapis.com/css?family=Special+Elite);
 
+body {
+  padding: 10px 50px 50px 50px;
+}
+
 h1 {
   font-size: 300%;
   font-family: 'Special Elite', cursive;
@@ -67,6 +71,9 @@ dd span {
 footer {
   text-align: center;
 }
+
+footer p {
+  margin: 3px 0px; }
 
 .icon img {
   padding: 4px;
