@@ -38,8 +38,8 @@ Web Fonts が表示できないブラウザでも、単に(笑)と表示され�
 
     @font-face {
         font-family: Emolett;
-        src: url("/fonts/emolett.woff") format("woff"),
-        url("/fonts/emolett.otf") format("opentype");
+        src: url("/fonts/Emolett.woff") format("woff"),
+        url("/fonts/Emolett.otf") format("opentype");
     }
     
     .emolett,
